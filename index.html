@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Портфолио Валерия Золотухина | Главная страница</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="header" style=" background-image: url(images/bg/bg.jpg);">
+    <div class="header__top">
+      <div class="container">
+        <nav class="menu">
+          <a class="logo" href="#">
+            <img class="logo__img" src="images/logo/logo.svg"
+              alt="Логотип сайта Портфолио" height="53" width="158">
+          </a>
+          <button class="burger" type="button">
+            <span class="burger__span"></span>
+            <span class="sr-only">Для открытия навигационного меню </span>
+          </button>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#about">Обо мне</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#skills">Навыки</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#services">Услуги</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#portfolio">Портфолио</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#reviews">Отзывы</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="header__inner">
+        <h1 class="header__title">
+          Привет, я Валерий Золотухин
+          <span class="header__subtitle">frontend- разработчик</span>
+        </h1>
+      </div>
+    </div>
+    <a class="header__icon" href="#portfolio"> смотреть работы</a>
+  </header>
+
+  <main>
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="title about__title">Обо мне</h2>
+        <div class="about__text">
+          <p>
+            Приветствую всех на своём сайте! Меня зовут Валерий, я из Санкт-Петербурга.
+            Занимаюсь
+            фронтенд-разработкой более года. До разработки занимался нелюбимым делом,
+            ходил на нелюбимую работу, не мог понять за что взяться, чтобы дело приносило
+            удовольствие и деньги, пока не наткнулся на один интересный курс.
+          </p>
+          <p>
+            С тех пор прошел огонь, воду и медные трубы. Учёба давалась по-разному: где-то
+            легче,
+            где-то сложнее. Каждодневная работа над навыками и усердие, с которым я
+            подходил к обучению, уже через несколько месяцев принесли плоды - я взял
+            первый заказ на фрилансе. С отзывами клиентов и примерами работ можно
+            ознакомиться
+            ниже.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section-padding" id="skills">
+      <div class="container">
+        <h2 class="title skills__title">Навыки</h2>
+        <div class="skills__inner">
+          <img class="skills__img" src="images/skills/avatar.jpg"
+            alt="Аватар владельца портфолио" width="415">
+
+          <ul class="skills__list">
+            <li class="skills__item">
+              <span class="skills__text">html</span>
+              <span class="skills__num" style="width: calc(100% - 95%)"></span>
+            </li>
+            <li class="skills__item">
+              <span class="skills__text">css</span>
+              <span class="skills__num" style="width: calc(100% - 90%)"></span>
+            </li>
+            <li class="skills__item">
+              <span class="skills__text">js</span>
+              <span class="skills__num" style="width: calc(100% - 85%)"></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section-padding" id="services">
+      <div class="container">
+        <h2 class="title services__title">Услуги</h2>
+        <ul class="services__items">
+          <li class="services__item">
+            <h3 class="services__caption services__caption--arrows">Вёрстка проектов</h3>
+            <div class="services__text">
+              <p>
+                Сделаю качественную вёрстку вашего проекта по предоставленному макету или
+                примеру
+              </p>
+            </div>
+          </li>
+
+          <li class="services__item ">
+            <h3 class="services__caption services__caption--dev">Посадка на CMS</h3>
+            <div class="services__text">
+              <p>
+                Интегрирую ваш проект в одну из популярных CMS
+              </p>
+            </div>
+          </li>
+
+          <li class="services__item ">
+            <h3 class="services__caption services__caption--chat">Поддержка сайта</h3>
+            <div class="services__text">
+              <p>
+                Гарантирую поддержку вашего сайта на протяжениии 30 дней после сдача
+                проекта
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <h2 class="title portfolio__title">Мои работы</h2>
+      <div class="container">
+        <ul class="filter">
+          <li class="filter__item">
+            <button class="filter__btn" type="button" data-filter="all">
+              Все работы
+            </button>
+          </li>
+
+          <li class="filter__item">
+            <button class="filter__btn" type="button" data-filter=".category-a">Лендинги
+            </button>
+          </li>
+
+          <li class="filter__item">
+            <button class="filter__btn" type="button"
+              data-filter=".category-b">Корпоративные
+            </button>
+          </li>
+
+          <li class="filter__item">
+            <button class="filter__btn" type="button" data-filter=".category-c">E-commerce
+            </button>
+          </li>
+        </ul>
+
+        <ul class="portfolio__list">
+          <li class="portfolio__item mix category-a category-all">
+            <a class="portfolio__link" href="images/portfolio/portfolio-1.jpg"
+              data-fancybox="images" data-width="2048" data-height="1365">
+              <img class="portfolio__img" src="images/portfolio/portfolio-1.jpg"
+                alt="Картинка портфолио Правый берег Босфора" width="355" height="355">
+            </a>
+          </li>
+
+          <li class="portfolio__item mix category-a category-all">
+            <a class="portfolio__link" href="images/portfolio/portfolio-2.jpg"
+              data-fancybox="images" data-width="2048" data-height="1365">
+              <img class="portfolio__img" src="images/portfolio/portfolio-2.jpg"
+                alt="Картинка портфолио Парусные галлеры под мостом" width="355"
+                height="355">
+            </a>
+          </li>
+
+          <li class="portfolio__item mix category-b category-all">
+            <a class="portfolio__link" href="images/portfolio/portfolio-3.jpg"
+              data-fancybox="images" data-width="2048" data-height="1365">
+              <img class="portfolio__img" src="images/portfolio/portfolio-3.jpg"
+                alt="Картинка портфолио Арочный мост" width="355" height="355">
+            </a>
+          </li>
+
+          <li class="portfolio__item mix category-b category-all">
+            <a class="portfolio__link" href="images/portfolio/portfolio-4.jpg"
+              data-fancybox="images" data-width="2048" data-height="1365">
+              <img class="portfolio__img" src="images/portfolio/portfolio-4.jpg"
+                alt="Картинка портфолио Восход солнца в мегаполисе" width="355"
+                height="355">
+            </a>
+          </li>
+
+          <li class="portfolio__item mix category-c category-all">
+            <a class="portfolio__link" href="images/portfolio/portfolio-5.jpg"
+              data-fancybox="images" data-width="2048" data-height="1365">
+              <img class="portfolio__img" src="images/portfolio/portfolio-5.jpg"
+                alt="Картинка портфолио Дикий пляж" width="355" height="355">
+            </a>
+          </li>
+
+          <li class="portfolio__item mix category-c category-all">
+            <a class="portfolio__link" href="images/portfolio/portfolio-6.jpg"
+              data-fancybox="images" data-width="2048" data-height="1365">
+              <img class="portfolio__img" src="images/portfolio/portfolio-6.jpg"
+                alt="Картинка портфолио Белая скала в Уэльсе" width="355" height="355">
+            </a>
+          </li>
+        </ul>
+        <button class="btn" type="button">Загрузить еще</button>
+      </div>
+    </section>
+
+    <section class="reviews section-padding" id="reviews">
+      <div class="container reviews--container">
+        <h2 class="title reviews__title">Отзывы клиентов</h2>
+        <div class="reviews__slider">
+          <div class="reviews__item">
+            <div class="reviews__content">
+              <div class="reviews__box">
+                <img class="reviews__photo" src="images/reviews/reviews-photo-1.png"
+                  height="130" width="130" alt="Марк Цукерберг">
+              </div>
+              <blockquote class="blockquote">
+                <cite class="blockquote__title">Марк Цукерберг</cite>
+                Фантастика! Я всецело доволен
+                работой этого специалиста.
+                Быстро и качественно.
+                Рекомендую!
+              </blockquote>
+            </div>
+            <a class="video" data-fancybox aria-label="Выступление Марка Цукерберга"
+              href="https://www.youtube.com/watch?v=MtgzJiXj2o8">
+            </a>
+          </div>
+
+          <div class="reviews__item">
+            <div class="reviews__content">
+              <div class="reviews__box">
+                <img class="reviews__photo" src="images/reviews/reviews-photo-2.png"
+                  height="130" width="130" alt="Билл Гейтс">
+              </div>
+              <blockquote class="blockquote">
+                <cite class="blockquote__title">Билл Гейтс</cite>
+                Фантастика! Я всецело доволен
+                работой этого специалиста.
+                Быстро и качественно.
+                Рекомендую!
+              </blockquote>
+            </div>
+            <a class="video" data-fancybox aria-label="Выступление Била Гейтса"
+              href="https://www.youtube.com/watch?v=8AV3Fh-MKJ4">
+            </a>
+          </div>
+
+          <div class="reviews__item">
+            <div class="reviews__content">
+              <div class="reviews__box">
+                <img class="reviews__photo" src="images/reviews/reviews-photo-3.png"
+                  height="130" width="130" alt="Сэр Тимоти Джон Бе́рнерс-Ли">
+              </div>
+              <blockquote class="blockquote">
+                <cite class="blockquote__title">Сэр Тимоти Джон Бе́рнерс-Ли</cite>
+                Фантастика! Я всецело доволен
+                работой этого специалиста.
+                Быстро и качественно.
+                Рекомендую!
+              </blockquote>
+            </div>
+            <a class="video" data-fancybox
+              aria-label="Выступление Сэрф Тимоти Джон Бе́рнерс-Ли"
+              href="https://www.youtube.com/watch?v=tVqdfq6IBcw">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quantity section-padding">
+      <h2 class="sr-only">Статистика</h2>
+      <div class="container">
+        <ul class="quantity__list">
+          <li class="quantity__item quantity__item--works">
+            <span class="quantity__text">Выполненных работ</span>
+            <span class="quantity__number">56</span>
+          </li>
+
+          <li class="quantity__item quantity__item--clients">
+            <span class="quantity__text">Довольных клиентов</span>
+            <span class="quantity__number">23</span>
+          </li>
+
+          <li class="quantity__item quantity__item--caps">
+            <span class="quantity__text">Выпито чашек кофе</span>
+            <span class="quantity__number">477</span>
+          </li>
+
+          <li class="quantity__item quantity__item--review">
+            <span class="quantity__text">Всего отзывов</span>
+            <span class="quantity__number">48</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+      <div class="container">
+        <h2 class="title contacts__title">Контакты</h2>
+        <div class="contacts__wrapper">
+
+          <address class="contacts__info">
+            <div class="contacts__text">
+              <p>
+                Связаться со мной можно, воспользовавшись контактной формой или напрямую
+                по
+                номеру
+                телефона, email, в соцсетях:
+              </p>
+
+            </div>
+
+            <a class="contacts__tel" href="tel:+79213091925">
+              +7 (921) 309 19 25
+            </a>
+
+            <a class="contacts__email" href="mailto:leshikzoloto@gmail.com">
+              leshikzoloto@gmail.com
+            </a>
+
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg class="svg" width="44" height="44" viewBox="0 0 44 44" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M31.2188 0H12.7813C5.73366 0 0 5.73366 0 12.7813V31.2187C0 38.2663 5.73366 44 12.7813 44H31.2187C38.2663 44 44 38.2663 44 31.2188V12.7813C44 5.73366 38.2663 0 31.2188 0ZM40.5625 31.2187C40.5625 36.3709 36.3709 40.5625 31.2188 40.5625H12.7813C7.6291 40.5625 3.4375 36.3709 3.4375 31.2188V12.7813C3.4375 7.6291 7.6291 3.4375 12.7813 3.4375H31.2187C36.3709 3.4375 40.5625 7.6291 40.5625 12.7813V31.2187Z"
+                      fill="#2352DE" />
+                    <path
+                      d="M22 10.1406C15.4607 10.1406 10.1406 15.4607 10.1406 22C10.1406 28.5393 15.4607 33.8594 22 33.8594C28.5393 33.8594 33.8594 28.5393 33.8594 22C33.8594 15.4607 28.5393 10.1406 22 10.1406ZM22 30.4219C17.3562 30.4219 13.5781 26.6438 13.5781 22C13.5781 17.3562 17.3562 13.5781 22 13.5781C26.6438 13.5781 30.4219 17.3562 30.4219 22C30.4219 26.6438 26.6438 30.4219 22 30.4219Z"
+                      fill="#2352DE" />
+                    <path
+                      d="M34.0312 11.6875C34.9805 11.6875 35.75 10.918 35.75 9.96875C35.75 9.01951 34.9805 8.25 34.0312 8.25C33.082 8.25 32.3125 9.01951 32.3125 9.96875C32.3125 10.918 33.082 11.6875 34.0312 11.6875Z"
+                      fill="#2352DE" />
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social__item">
+                <a class="social__link" href="https://www.facebook.com/leshikzoloto/"
+                  target="_blank">
+                  <svg class="svg" width="44" height="44" viewBox="0 0 44 44" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M38.8438 0H5.15625C2.31309 0 0 2.31309 0 5.15625V38.8438C0 41.6869 2.31309 44 5.15625 44H38.8438C41.6869 44 44 41.6869 44 38.8438V5.15625C44 2.31309 41.6869 0 38.8438 0ZM40.5625 38.8438C40.5625 39.7915 39.7915 40.5625 38.8438 40.5625H29.0469V26.5547H34.357L35.2344 21.2266H29.0469V17.5312C29.0469 16.0725 30.1662 14.9531 31.625 14.9531H35.1484V9.625H31.625C27.2488 9.625 23.7206 13.1699 23.7206 17.5462V21.2266H18.5625V26.5547H23.7206V40.5625H5.15625C4.20853 40.5625 3.4375 39.7915 3.4375 38.8438V5.15625C3.4375 4.20853 4.20853 3.4375 5.15625 3.4375H38.8438C39.7915 3.4375 40.5625 4.20853 40.5625 5.15625V38.8438Z"
+                      fill="#2352DE" />
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg class="svg" width="44" height="46" viewBox="0 0 44 46" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                      <path
+                        d="M43.3206 4.4923C42.7831 3.81675 41.9781 3.44482 41.0536 3.44482C40.5511 3.44482 40.0187 3.5535 39.4715 3.76845L2.22633 18.381C0.249764 19.1563 -0.0164409 20.3197 0.000679409 20.9441C0.0177997 21.5686 0.347786 22.7148 2.36396 23.3741C2.37605 23.3779 2.38813 23.3817 2.40022 23.3851L10.1259 25.6574L14.3039 37.9366C14.8736 39.6107 16.1522 40.6505 17.6414 40.6505C18.5803 40.6505 19.5038 40.2462 20.3121 39.4816L25.0907 34.9595L32.0218 40.6954C32.0225 40.6961 32.0235 40.6964 32.0241 40.6971L32.0899 40.7516C32.096 40.7565 32.1024 40.7616 32.1084 40.7665C32.8788 41.3806 33.7197 41.7049 34.5412 41.7053H34.5415C36.1465 41.7053 37.4244 40.4842 37.7967 38.5949L43.8993 7.62472C44.1444 6.38162 43.9389 5.26928 43.3206 4.4923ZM12.7104 25.2258L27.6155 17.3998L18.3346 27.5354C18.1825 27.7013 18.0747 27.9045 18.0217 28.1257L16.2321 35.576L12.7104 25.2258ZM18.5655 37.5323C18.5038 37.5906 18.4417 37.6427 18.3796 37.6906L20.0399 30.7792L23.0601 33.2789L18.5655 37.5323ZM41.3725 7.09857L35.27 38.0691C35.2112 38.3655 35.0236 39.0552 34.5412 39.0552C34.3028 39.0552 34.0034 38.9217 33.6969 38.6791L25.843 32.1797C25.842 32.1786 25.8407 32.1776 25.8393 32.1769L21.1661 28.3092L34.5875 13.6518C35.0172 13.1826 35.0561 12.4639 34.6798 11.9485C34.3032 11.433 33.6207 11.2709 33.0624 11.5641L10.9879 23.1547L3.1572 20.852L40.391 6.24396C40.7055 6.12044 40.9251 6.09456 41.0536 6.09456C41.1325 6.09456 41.2728 6.10422 41.3249 6.17012C41.3933 6.25603 41.4806 6.54895 41.3725 7.09857Z"
+                        fill="#2352DE" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0">
+                        <rect width="44" height="45.2222" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </address>
+
+          <form class="form">
+            <div class="form__wrapper">
+              <label class="label">
+                <span class="form__text">Ваше имя</span>
+                <input class="form__input" name="name" type="text" required
+                  placeholder="Иван">
+              </label>
+              <label class="label">
+                <span class="form__text">Номер телефона</span>
+                <input class="form__input" name="phone" type="tel" required
+                  placeholder="+380501111111">
+              </label>
+            </div>
+            <label class="label__textarea">
+              <span class="form__text">Ваше сообщение</span>
+              <textarea class="form__input form--textarea" name="message" required
+                placeholder="Текст вашего сообщения"></textarea>
+            </label>
+            <button class="btn contacts__btn" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo footer--logo" href="#">
+      <img class="logo__img" src="images/logo/logo.svg" alt="Логотип сайта Портфолио"
+        height="53" width="158">
+    </a>
+  </footer>
+
+  <button class="scroll" type="button">
+    <span class="sr-only">Для поднятия к шапке сайта</span>
+    <svg width="37" height="23" viewBox="0 0 37 23" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M18.5 0.954493C19.1632 0.954493 19.8262 1.20769 20.3318 1.71301L36.2409 17.6223C37.2529 18.6344 37.2529 20.2752 36.2409 21.2868C35.2293 22.2984 33.5888 22.2984 32.5767 21.2868L18.5 7.20936L4.42332 21.2863C3.41129 22.2979 1.77095 22.2979 0.759411 21.2863C-0.253109 20.2747 -0.253109 18.6339 0.759411 17.6218L16.6683 1.71251C17.1741 1.20711 17.8372 0.954493 18.5 0.954493Z"
+        fill="white" />
+    </svg>
+  </button>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/mixitup.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
